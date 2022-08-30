@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans+Display:wght@300;600 ve family= PT+Mono & display=swap');
+
+/* yazı tipi ailesi: 'Noto Sans Display', sans-serif;
+yazı tipi ailesi: 'PT Mono', monospace; */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'PT Mono', monospace;
+    border: none;
+}
+:root{
+    --main-color: rgba(141, 15, 15, 0.714);
+    --black-color: rgb(48, 48, 48);
+    --second-black-color: rgb(36, 36, 36);
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--main-color);
+    text-align: center;
+   
+}
+/* ****************************************** */
+.container {
+    display: flex;
+    justify-content: center;  
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}
+main {
+    height: 50rem;
+    width: 40rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 2rem 0.5rem var(--second-black-color);
+    background-color: #fff;
+}
+.title {
+    font-size: 3.2rem;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: var(--black-color);
+    font-weight: bold;
+}
+/* Text section Start */
+.text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.text-title {
+    color: var(--second-black-color);
+    align-self: start;
+    font-weight: bold;
+    font-size: 1.8rem;
+    
+}
+#myText {
+    height: 11rem;
+    width: 32rem;
+    outline: 2px solid var(--main-color);
+    border-radius: 0.8rem;
+    resize: none;
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+}
+/* Text section End */
+/* Voice section Start */
+.voice-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.voice-title {
+    color: var(--second-black-color);
+    font-weight: bold;
+    align-self: start;
+    font-size: 1.8rem;
+}
+#myVoice {
+    width: 32rem;
+    height: 4.8rem;
+    outline: 2px solid var(--main-color);
+    border-radius: 0.6rem;
+    padding: 0rem 1rem;
+}
+.submit {
+    background-color: var(--main-color);
+    color: #fff;
+    width: 32rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+}
+/* Voice section End */
